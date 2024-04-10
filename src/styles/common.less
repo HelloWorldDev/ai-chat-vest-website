@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#app {
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.all-header-index {
+    margin-top: 0.6rem;
+}
+
+a {
+    display: flex;
+    outline: none;
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+//折行
+.break-word {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+//以单词为依据折行
+.word-break-word {
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.word-break-word2 {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+//单行省略号
+.single-line-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.preserve-whitespace {
+    white-space: pre-wrap;
+}

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../favicon.ico" />
+        <title>Ai Girlfriend</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: "SF Pro Display Medium", "PingFang SC", "Microsoft YaHei", "微软雅黑", Avenir, Helvetica, Arial,
+                    "Heiti SC", "sans-serif";
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .box {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                background: #000000;
+                padding: 30px 25px;
+                box-sizing: border-box;
+                color: #ffffff;
+                font-weight: 400;
+            }
+            .title {
+                font-size: 21px;
+                line-height: 33px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .title-3 {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 17px;
+            }
+            .title-1 {
+                margin-top: 20px;
+                font-size: 16px;
+                line-height: 17px;
+            }
+            .title-2 {
+                font-weight: bold;
+                margin-top: 20px;
+                font-size: 15px;
+                line-height: 17px;
+            }
+            .content {
+                margin-top: 17px;
+                font-size: 13px;
+                line-height: 16px;
+            }
+            .wrap {
+                padding-left: 15px; /* 调整左边距 */
+                margin-left: 0; /* 避免默认的 margin 影响 */
+                list-style-type: decimal;
+                box-sizing: border-box;
+            }
+            .wrap1 {
+                padding-left: 15px; /* 调整左边距 */
+                margin-left: 0; /* 避免默认的 margin 影响 */
+                box-sizing: border-box;
+            }
+            .gray-wrap {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .left {
+                width: 1px;
+                height: 140px;
+                background-color: gray;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+            .gray {
+                margin-top: 20px;
+                font-size: 14px;
+                color: gray;
+            }
+            .list {
+                margin-top: 10px;
+                font-size: 13px;
+                line-height: 16px;
+            }
+            .special {
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .hrefs {
+                display: flex;
+                flex-direction: column;
+            }
+            .hrefs a {
+                color: rgba(25, 83, 255, 1);
+                font-size: 13px;
+                position: relative;
+                padding-left: 15px;
+                box-sizing: border-box;
+                margin-top: 10px;
+                text-decoration: none;
+            }
+            .hrefs2 a {
+                color: #fff;
+            }
+            .hrefs a::before {
+                content: "";
+                width: 5px;
+                height: 5px;
+                display: inline-block;
+                background-color: #fff;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                margin-top: -2.5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p class="title">Terms of Service & Membership Subscription Agreement</p>
+            <p class="title-3">Welcome to SUPE AI Darling!</p>
+            <p class="content">
+                We're glad you're here. These Terms of Service (the "Terms") govern your use of SUPE AI Darling and the software,
+                content and services (collectively, the "Services") provided through: our website www.supe.ai and its subdomains
+                (the "Site ”), our website www.supe.ai and its subdomains (the “Website”), the mobile applications SUPE AI Darling
+                for Android and SUPE AI Darling for iOS (the “App”).
+            </p>
+            <p class="title-2">Please read these Terms carefully before starting to use the Services.</p>
+            <p class="content">
+                The terms "SUPE AI Darling", "we" or "us" refer to GAME.COM LIMITED, a software company that designed and built
+                SUPE AI Darling, incorporated in the State of Delaware and operating from San Francisco, California.
+            </p>
+            <p class="content">
+                The term "device" refers to the device used to access the Service, including, but not limited to, computers,
+                smartphones, and tablets.
+            </p>
+            <p class="content">The term "you" refers to the user of the Service.</p>
+            <p class="content">
+                When you register for any Services or otherwise use or access them, you agree to be bound by these Terms and all
+                applicable laws, rules and regulations. By using the Services, you accept these Terms and agree to abide by them.
+                If you do not agree to these Terms, please do not use the Services.
+            </p>
+            <p class="content">
+                Our contact email address is hello@game.com. All communications with SUPE AI Darling, including any questions you
+                may have about your use of the Services or these Terms, should be directed to this contact email address.
+            </p>
+            <p class="title-2">
+                Please note that these Terms contain an arbitration provision. Except for certain types of disputes addressed in
+                the arbitration provision, you and SUPE AI Darling agree that any disputes relating to these Terms or your use of
+                the Services will be resolved by mandatory binding arbitration, and you and SUPE AI Darling waive any right to
+                participate in a class action lawsuit RIGHTS OR CLASS ARBITRATION.
+            </p>
+            <p class="title-1">1. Our services</p>
+            <p class="content">SUPE AI Darling provides personal chatbot services via text and voice interfaces.</p>
+
+            <p class="title-2">1.1. Medical disclaimer</p>
+            <p class="content">
+                SUPE AI Darling is a software and content provider designed to improve your mood and emotional well-being.
+                However, we are not a healthcare or medical device provider, nor should our services be considered healthcare,
+                mental health services, or other professional services. Only your doctor or other health care provider can do
+                this. While third-party evidence from research suggests that certain conversational techniques implemented in SUPE
+                AI Darling can aid the recovery process in a variety of conditions, SUPE AI Darling does not claim, represent, or
+                warrant that the Services provide therapeutic benefits.
+            </p>
+            <p class="title-2">1.2. Emergencies</p>
+            <p class="content">
+                Use of the Services is not for emergencies. If you think you are experiencing a medical or mental health
+                emergency, call 911 or go to the nearest open clinic or emergency room.
+            </p>
+            <p class="content">
+                If you are contemplating or committing suicide, or believe that you are a danger to yourself or others, you must
+                immediately stop using the Services, call 911, or notify appropriate police or emergency medical personnel.
+            </p>
+            <p class="title-2">1.3. Service modifications</p>
+            <p class="content">
+                We reserve the right to modify or discontinue, temporarily or permanently, the Service (or any part thereof) with
+                or without notice. You agree that SUPE AI Darling will not be liable to you or any third party for any
+                modification, suspension, or discontinuance of any Service.
+            </p>
+
+            <p class="title-1">2. Membership and Subscriptions</p>
+            <p class="title-2">2.1. Become a user</p>
+            <p class="content">
+                You are required to register with SUPE AI Darling (“Create an Account”) and become a SUPE AI Darling user in order
+                to access and use the Services. If you choose to register for the Services, you agree to provide and maintain
+                true, accurate, current and complete personal information as prompted by the registration form. Registration data
+                and certain other information about you are governed by our Privacy Policy.
+            </p>
+            <p class="title-2">2.2. Once you become a user</p>
+            <p class="content">
+                You are responsible for maintaining the confidentiality of your password and account (if any) and are fully
+                responsible for any and all activities that occur under your password or account. You agree to (a) immediately
+                notify SUPE AI Darling of any unauthorized use of your password or account or any other breach of security, and
+                (b) ensure that you exit from your account at the end of each session while accessing the Service. SUPE AI Darling
+                will not be liable for any loss or damage arising from your failure to comply with this section.
+            </p>
+            <p class="title-2">2.3. Once you subscribe and become a member</p>
+            <p class="content">
+                As a SUPE AI Darling member, you will have access to Service content, features and functionality not available to
+                non-members.
+            </p>
+            <p class="content">
+                By agreeing to become a member, you opt-in to receive occasional emails with special offers, marketing, surveys
+                and service-based communications. You can easily unsubscribe from SUPE AI Darling commercial emails by following
+                the opt-out instructions in these emails. SUPE AI Darling memberships and subscriptions are non-transferable and
+                therefore cannot be sold, exchanged or transferred in any way.
+            </p>
+            <p class="title-1" id="section-2.4">2.4 Purchase and payment</p>
+            <p class="content">
+                We may provide various AI chat services that you can purchase and use through the Services. You don't own these
+                services; instead, you purchase enough application Gems to use them. You will always see the price of the service
+                before completing your purchase. However, SUPE AI Darling does not handle payments or payment processing for any
+                purchases; these are handled by third-party payment providers or service providers (such as Apple's iOS Store and
+                Google's Google Play Store, etc.). Some third-party service providers may charge you sales tax, depending on where
+                you live. Please check the relevant terms of the third-party service provider for details.
+            </p>
+            <p class="content">
+                All purchases are final and non-refundable subject to any applicable additional terms and conditions. And, because
+                our fulfillment begins once you click "Buy" and we give you immediate access to your purchase, you waive any
+                rights you may have under other local laws to cancel your purchase or obtain a refund after it is completed.
+                right. By accepting these Terms, you agree that SUPE AI Darling is not required to provide refunds for any reason.
+            </p>
+            <p class="content">
+                Some of the virtual products we offer are for one-time use only, while others are reusable. But please note that
+                "repeat" does not mean "forever." We may change, modify or eliminate Virtual Products at any time, with or without
+                notice. You agree that if we do this, we will not be liable to you or any third party. If we suspend or terminate
+                your account, you will lose any products purchased through the Service. Managing your purchases is your sole
+                responsibility. If you are under 18 years of age (or below the legal age of majority where you reside), you must
+                obtain parent or guardian consent before making any purchase.
+            </p>
+            <p class="content">
+                SUPE AI Darling does not transmit any funds and is not a money services business. To the extent such functionality
+                is provided on the Service, it is provided by an unaffiliated third party and, like any other third-party service,
+                is subject to that third party's separate terms of service.
+            </p>
+            <p class="content">
+                SUPE AI Darling offers in-app purchases ("IAP") via iTunes, Google Play. If you choose to make an IAP, you will be
+                prompted to enter the details of your App Platform account and your App Platform account (such as your iTunes
+                account) will be charged IAP fees in accordance with the terms disclosed to you at the time of your purchase
+                information and applicable to you IAP General Terms for Application Platform Accounts. Some app platforms may
+                charge you sales tax, depending on where you live. If you purchase an automatic recurring subscription IAP, your
+                App Platform account will continue to be charged for the subscription until you cancel the IAP. After your initial
+                subscription commitment period and after any subsequent subscription periods, your subscription will automatically
+                continue for an additional equivalent period at the price you agreed to when subscribing. If you do not want your
+                subscription to automatically renew, or want to change or terminate your subscription, you can do so in the SUPE
+                AI Darling app, or log into your app platform account and follow the instructions to cancel your subscription,
+                even if you have otherwise deleted it your account with us, or if you delete the SUPE AI Darling application from
+                your device. If you cancel your subscription, your subscription will be available until the end of the current
+                subscription period and your subscription will not be renewed after the current subscription period expires.
+                Deleting your account on SUPE AI Darling or deleting the SUPE AI Darling app from your device will not cancel your
+                subscription; SUPE AI Darling will retain all funds collected from your application platform until you cancel your
+                subscription.
+            </p>
+            <p class="content">
+                Generally, all IAP fees are non-refundable and no refunds or credits are given for partial usage periods. We may
+                make exceptions if a refund for a subscription product is requested within fourteen days of the transaction date,
+                or if a refund is required by applicable law in your jurisdiction. For subscribers residing in the European Union
+                or European Economic Area, you are entitled to a full refund within 14 days of the start of your subscription,
+                subject to local law. Please note that this 14-day period begins when the subscription begins. Request a Refund:
+                If you subscribed using an Apple ID, refunds will be processed by Apple, not SUPE AI Darling. To request a refund,
+                go to iTunes, click on your Apple ID, select Purchase History, find the transaction and click Report a Problem.
+                You can also submit a request at https://getsupport.apple.com.
+            </p>
+            <p class="content">
+                If you subscribed using a Google Play Store account: Please contact Google Play customer support and provide your
+                Google Play Store order number (you can find your order number in your order confirmation email or by logging in
+                to Google Wallet).
+            </p>
+            <p class="title-2">2.5 Subscription</p>
+            <p class="content">
+                If you decide to purchase SUPE AI Darling's VIP membership, payment will be charged to your iTunes account. Your
+                account will be charged for renewal within 24-hours prior to the end of the current period. SUPE AI Darling
+                subscriptions start at $14.99/month. Prices in countries outside the United States may vary and are subject to
+                change without notice.
+            </p>
+            <p class="title-2">Detailed subscription prices are as follows:</p>
+            <p class="title-2">SUPE PLUS Service</p>
+            <p class="content">SUPE PLUS Service offers two payment options: annual and monthly subscriptions.</p>
+            <p class="content">Annual Subscription:</p>
+            <ul class="wrap">
+                <li class="list">Enjoy a 62% discount for the annual subscription, priced at $69.9/year.</li>
+                <li class="list">Renewals maintain the same discounted rate.</li>
+            </ul>
+            <p class="content">Monthly Subscription:</p>
+            <ul class="wrap">
+                <li class="list">The monthly subscription is $14.99/month with no discounts.</li>
+                <li class="list">Renewals will continue at the standard monthly rate.</li>
+            </ul>
+            <p class="title-2">SUPE PREMIUM Service:</p>
+            <ul class="wrap">
+                <li class="list">Monthly subscription price on iOS is $24.99/month, no discount.</li>
+                <li class="list">Monthly subscription price on Android is $19.99/month, no discount.</li>
+                <li class="list">Enjoy a 62% discount for the annual subscription, priced at $99.99 /year.</li>
+                <li class="list">Renewals will remain at the same monthly rate.</li>
+            </ul>
+            <p class="title-2">Most subscriptions automatically renew unless you cancel.</p>
+            <p class="content">
+                1) If you use an iPhone, you can turn off automatic renewal at any time through "Settings" - "Click your name" -
+                "Click to subscribe" - "Click to subscribe" - "Click to cancel subscription". You may need to scroll down to find
+                the "Unsubscribe" button. If there is no cancel button or you see an expiration message in red text, the
+                subscription has been canceled.
+            </p>
+            <p class="content">
+                2) If you don't use an iPhone, you can go to "play.google.com" - "In the upper right corner, click your profile
+                icon" - "Click Payments & Subscriptions" - "Next to the subscription you want to cancel, select Manage ” — “In the
+                confirmation pop-up, click Unsubscribe.” If you subscribe to an app and the app is removed from Google Play, your
+                future subscriptions will be cancelled. Your past subscriptions will not be refunded. - Canceling the currently
+                purchased subscription is not allowed after the subscription is activated. If you do not want to start a SUPE AI
+                Darling subscription, you can still continue to enjoy the SUPE AI Darling app for free.
+            </p>
+            <p class="content">
+                Subscriptions are handled by the Apple AppStore or Google PlayStore: if you cancel, you can continue using your
+                subscription until your next billing date. If you cancel during the trial period, you may immediately lose access
+                to the content.
+            </p>
+            <p class="content">To learn more about checking or canceling your Apple or Google subscription:</p>
+            <a href="https://support.apple.com/en-us/HT202039">https://support.apple.com/en-us/HT202039</a>
+            <a href="https://support.google.com/googleplay/answer/7018481"
+                >https://support.google.com/googleplay/answer/7018481</a
+            >
+            <p class="title-1">3. Cancellation of service</p>
+            <p class="title-2">3.1. Cancellation by you</p>
+            <p class="content">
+                You may cancel your Membership at any time by deleting your account in the app. This action is irreversible. As
+                soon as you delete your account, all the data associated with your use of the Services will be removed
+                permanently. Upon your account deletion, cancellation of a Paid Subscription is effective at the end of the
+                applicable billing period.You may cancel your membership at any time by deleting your account within the App. This
+                operation is irreversible. Once you delete your account, all data related to your use of the Services will be
+                permanently deleted. Upon deletion of an account, cancellation of a paid subscription will be effective at the end
+                of the applicable billing period.
+            </p>
+            <p class="content">
+                You can cancel your paid subscription and downgrade to "Free Use" at any time without deleting your account.
+                Cancellation is effective at the end of the applicable billing period.
+            </p>
+            <p class="content">
+                Please note that if you purchased a paid subscription through the Apple iTunes Store or our iPhone app, you can
+                cancel automatic renewal of your paid in-app subscription by selecting Manage App Subscriptions in your iTunes
+                account settings and selecting the subscription you want. , thereby canceling the subscription. Adjustment.
+            </p>
+            <p class="content">
+                If you purchased a paid subscription through the Google Play Store, you can cancel auto-renewal in your account
+                settings under "Subscriptions" in the Google Play app, or by following the current process outlined by Google
+                Play.
+            </p>
+            <p class="title-2">3.2. Cancellation by us</p>
+            <p class="content">
+                We may suspend or terminate your use of the Services due to your fraud or breach of any of your obligations under
+                these Terms. Such termination or suspension may occur immediately and without notice.
+            </p>
+            <p class="title-1">4. General practices regarding use and storage</p>
+            <p class="content">
+                You acknowledge that we may establish general practices and limits regarding use of the Service, including,
+                without limitation, the maximum period for which data or other content is retained by the Service and the maximum
+                storage space allocated on our servers on your behalf. You agree that SUPE AI Darling has no responsibility or
+                liability for the deletion or failure to store any data or other content maintained or uploaded by the Service.
+                You acknowledge that we reserve the right to terminate accounts that are inactive for an extended period of time.
+                You further acknowledge that we reserve the right to change these general practices and limits at any time, in our
+                sole discretion, with or without notice.
+            </p>
+            <p class="title-1">5. Mobile Services</p>
+            <p class="content">
+                Some of our Services may be provided via mobile devices, including (i) the ability to upload content to the
+                Services via a mobile device, (ii) the ability to browse the Services and Site from a mobile device, and (iii) via
+                download and installation on a mobile device Applications to access certain features (collectively, the "Mobile
+                Services"). If you access the Service via a mobile device, your wireless service carrier's standard charges, data
+                rates and other charges may apply.
+            </p>
+            <p class="content">
+                In addition, your carrier may prohibit or restrict the downloading, installation, or use of certain Mobile
+                Services, and not all Mobile Services are available with all carriers or devices. By using the Mobile Services,
+                you agree that we may communicate with you about SUPE AI Darling and other entities via SMS, MMS, SMS, or other
+                electronic means through your mobile device and may communicate certain information about your use of the Mobile
+                Services to us.
+            </p>
+            <p class="content">
+                If you change or deactivate your mobile phone number, you agree to immediately update your SUPE AI Darling account
+                information to ensure that your messages are not sent to anyone who obtained your old number.
+            </p>
+            <p class="title-1">6. Conditions of use</p>
+            <p class="title-2">6.1. User behavior</p>
+            <p class="content">
+                You are responsible for all code, video, images, information, data, text, software, music, sound, photos,
+                graphics, messages or other materials ("Content") that you upload, post, publish or display ("Content") Take full
+                responsibility. Upload") or emailed or otherwise used through the Services. The following are examples of types of
+                content and/or uses that are unlawful or prohibited by SUPE AI Darling. We reserve the right to investigate and
+                take appropriate legal action against anyone who violates this provision. rights, including but not limited to
+                removing offending content from the Service, suspending or terminating the accounts of such violators, and
+                reporting you to law enforcement authorities. You agree not to use the Service to:
+            </p>
+            <ul class="wrap">
+                <li class="list">
+                    - Email or otherwise upload any content that (i) infringes any intellectual property or other proprietary
+                    right of any party; (ii) that you do not have a right to upload under any law or under contractual or
+                    fiduciary relationships; (iii) contains Software viruses or any other computer code, files or programs
+                    designed to interrupt, destroy or limit the functionality of any computer software or hardware or
+                    telecommunications equipment; (iv) constitute or create a privacy or security risk to any person; (v)
+                    constitute unsolicited or unauthorized advertising, promotional materials, commercial activities and/or sales,
+                    "junk mail," "spam," "chain letters," "pyramid schemes," "contests," "sweepstakes" or any other form of
+                    solicitation; ( vi) Content that is unlawful, harmful, threatening, abusive, harassing, tortious, excessively
+                    violent, defamatory, vulgar, obscene, pornographic, libelous, invasive of another's privacy, racially,
+                    ethnically or otherwise objectionable; (vii) SUPE AI Darling in its sole discretion is judgmental,
+                    objectionable or restricts or inhibits any other person from using or enjoying the Services, or may subject
+                    SUPE AI Darling or its users to harm or liability of any kind;
+                </li>
+                <li class="list">
+                    Interfere with or disrupt the Service or servers or networks connected to the Service, or disobey any
+                    requirements, procedures, policies or regulations of networks connected to the Service;
+                </li>
+                <li class="list">
+                    - Violate any applicable local, state, national or international law, or any regulation having the force of
+                    law;
+                </li>
+                <li class="list">
+                    - Impersonate any person or entity, or falsely state or otherwise misrepresent your affiliation with a person
+                    or entity;
+                </li>
+                <li class="list">-Solicit personal information from anyone under 18 years of age;</li>
+                <li class="list">
+                    - Harvest or collect the email addresses or other contact information of other users from the Services by
+                    electronic or other means for the purpose of sending unsolicited emails or other unsolicited communications;
+                </li>
+                <li class="list">
+                    - Advertise or offer to sell or buy any goods or services for any commercial purpose not expressly authorized;
+                </li>
+                <li class="list">
+                    - Further or promote any criminal activity or enterprise or provide instructional information regarding
+                    illegal activities;
+                </li>
+                <li class="list">
+                    - Obtain or attempt to access or otherwise obtain any materials or information through any means not
+                    intentionally made available or provided for through the Service.
+                </li>
+            </ul>
+            <p class="title-2">6.2. Special notice for international use; Export controls</p>
+            <p class="content">
+                The software (as defined below) associated with the Service and the transmission of applicable data, if any, are
+                subject to United States export controls. No software may be downloaded from the Services or otherwise exported or
+                re-exported in violation of U.S. export laws. Download or use of this software is at your own risk. Recognizing
+                the global nature of the Internet, you agree to comply with all local rules and laws regarding your use of the
+                Services, including those involving online conduct and acceptable content.
+            </p>
+            <p class="title-2">6.3. Commercial use</p>
+            <p class="content">
+                The Service is for your personal use only. Except as otherwise expressly authorized in this Agreement or in the
+                Service, you agree not to display, distribute, license, perform, publish, copy, reproduce, copy, create derivative
+                works from, modify, sell, resell, exploit, for any commercial purpose, Transfer or uploading, any portion of the
+                Service, use of the Service, or access to the Service.
+            </p>
+            <p class="title-2">6.4. Use of SUPE AI Darling by minors</p>
+            <p class="content">
+                If you are under 18 years of age, you are not authorized to use the Services, whether registered or not.
+            </p>
+
+            <p class="title-1">7. APPLE APP STORE AND GOOGLE PLAY STORE LEGAL INFORMATION</p>
+            <p class="content">
+                These Terms apply to your use of all Services, including iPhone applications ("Apps") available through the Apple,
+                Inc. ("Apple") App Store and Android applications available through Google, Inc. ("Google") Program”) Play Store
+                (the “App”), but the following additional terms also apply to the App:
+            </p>
+            <ul class="wrap1">
+                <li class="list">
+                    - You and SUPE AI Darling each acknowledge that these Terms are solely between you and SUPE AI Darling, and
+                    not with Apple and Google, and that Apple and Google are not responsible for the Application or Content;
+                </li>
+                <li class="list">
+                    - The Application is licensed to you on a limited, non-exclusive, non-transferable, non-sublicensable basis,
+                    for use solely in conjunction with the Service, for your private, personal, non-commercial use, subject to all
+                    terms and conditions applicable to Conditions of this Agreement for Services;
+                </li>
+                <li class="list">- You may only use the App with Apple devices that you own or control;</li>
+                <li class="list">
+                    - You acknowledge and agree that Apple has no obligation whatsoever to furnish any maintenance or support
+                    services with respect to the App;
+                </li>
+                <li class="list">
+                    - In the event of any failure of the App to conform to any applicable warranty (including warranties implied
+                    by law), you may notify Apple or Google of such failure; upon receipt of such notice, Apple's and Google's
+                    sole warranty obligation to you will be to return the App to you the purchase price (if any);
+                </li>
+                <li class="list">
+                    - You acknowledge and agree that SUPE AI Darling, and not Apple or Google, is responsible for resolving any
+                    claims you or any third party may have in connection with the Application;
+                </li>
+                <li class="list">
+                    - You acknowledge and agree that SUPE AI Darling, not Apple or Google, will be responsible for the
+                    investigation, defense, resolution and discharge of any third party claim that the App or your possession and
+                    use of the App infringes that third party’s intellectual property rights. any such claim of infringement;
+                </li>
+                <li class="list">
+                    - You represent and warrant that you are not located in a country that is subject to a U.S. government
+                    embargo, or that has been designated by the U.S. government as a "terrorist supporting" country, and that you
+                    are not listed in any U.S. government embargoed or prohibited country List of countries. restricted parties;
+                </li>
+                <li class="list">
+                    You and SUPE AI Darling each acknowledge and agree that when using the Application, you will comply with any
+                    applicable third party terms of agreement that may affect or be affected by such use;
+                </li>
+                <li class="list">
+                    - You and SUPE AI Darling each acknowledge and agree that Apple and Apple's subsidiaries and Google and
+                    Google's subsidiaries are third party beneficiaries of this Agreement, and upon your acceptance of this
+                    Agreement, Apple and Google will have the right to (and will Deemed Accepted) Rights) to enforce this
+                    Agreement against you as a third party beneficiary of this Agreement.
+                </li>
+                <li class="list">
+                    - SUPE AI Darling and you acknowledge and agree that Apple and Apple's subsidiaries are third-party
+                    beneficiaries of these Terms of Service with respect to Apple-powered software, and that upon your acceptance
+                    of the terms and conditions of these Terms of Service, Apple will have the right (and will be deemed to have
+                    accepted that right) to enforce these Terms of Service against you as a third-party beneficiary with respect
+                    to Apple-Powered Software.
+                </li>
+            </ul>
+            <p class="title-1">8. Intellectual Property Rights</p>
+            <p class="title-2">8.1. Service content, software and trademarks</p>
+            <p class="content">
+                You acknowledge and agree that the Services may contain content or functionality that is protected by copyrights,
+                patents, trademarks, trade secrets, or other proprietary rights and laws ("Service Content"). Except as expressly
+                authorized by SUPE AI Darling, you agree not to modify, copy, frame, scrape, rent, lease, loan, sell, distribute
+                or create derivative works based on all or part of the Service or Service Content, unless the foregoing does not
+                apply to you Your own User Content (as defined below) that is lawfully uploaded to the Service. When using the
+                Services, you will not engage in or use any data mining, robots, scraping or similar data gathering or extraction
+                methods. If SUPE AI Darling blocks your access to the Services (including blocking your IP address), you agree not
+                to take any steps to circumvent such blocking (for example, by blocking your IP address or using a proxy IP
+                address). Any use of the Services or Service Content in any manner not specifically authorized by this Agreement
+                is strictly prohibited. The technology and software underlying or distributed in connection with the Services are
+                the property of SUPE AI Darling, our affiliates and our partners (the "Software"). You agree not to copy, modify,
+                create derivative works of, reverse engineer, reverse assemble or otherwise attempt to discover any source code,
+                sell, assign, sublicense or otherwise transfer any rights in the Software. Any rights not expressly granted herein
+                are reserved by SUPE AI Darling.
+            </p>
+            <p class="content">
+                The SUPE AI Darling name and logo are trademarks and service marks of SUPE AI Darling (collectively, the “SUPE AI
+                Darling Trademarks”). Other company, product and service names and logos used and displayed through the Services
+                may be the trademarks or service marks of their respective owners, who may or may not endorse or be affiliated
+                with or associated with SUPE AI Darling. Nothing contained in these Terms of Service or in the Services shall be
+                construed as granting, by implication, estoppel, or otherwise, any license or right to use any SUPE AI Darling
+                Trademark displayed on the Services without our prior written permission. All goodwill generated from the use of
+                the SUPE AI Darling Trademarks shall accrue to our exclusive benefit.
+            </p>
+            <p class="title-2">8.2. Third Party Materials</p>
+            <p class="content">
+                Under no circumstances will SUPE AI Darling be liable in any way for any content or materials of any third party
+                (including Users), including without limitation for any errors or omissions in any content, or for any loss or
+                damage of any kind incurred as a result of resulting from the use of any such content. You acknowledge that SUPE
+                AI Darling does not pre-screen Content, but that SUPE AI Darling and its designees have the right (but not the
+                obligation) in their sole discretion to refuse or remove any Content that is available through the Service.
+                Without limiting the foregoing, SUPE AI Darling and its designees shall have the right to remove any content that
+                violates these Terms of Service or is objectionable in SUPE AI Darling's sole discretion. You agree that you must
+                evaluate, and bear all risks associated with, the use of any Content, including any reliance on the accuracy,
+                completeness or usefulness of such Content.
+            </p>
+            <p class="title-2">8.3. User Content transmitted through the Service</p>
+            <p class="content">
+                To the content or other materials that you upload or share with other users or recipients through the Services
+                (collectively, "User Content"), you represent and warrant that you own all right, title and interest in and to
+                such User Content, including, but not limited to All copyright and publicity rights contained therein. By
+                uploading any User Content, you hereby grant and will grant to SUPE AI Darling and its affiliates a non-exclusive,
+                worldwide, royalty-free, fully paid, transferable, sublicensable, perpetual, irrevocable license to copy, display,
+                upload, perform, distribute, store, modify and otherwise use your User Content in connection with the operation of
+                the Service or for promotional purposes in any form, medium or technology now known or hereafter developed ,
+                advertising or marketing related.
+            </p>
+            <p class="content">
+                You acknowledge and agree that any questions, comments, suggestions, ideas, feedback, or other information
+                regarding the Service ("Submissions") provided by you to SUPE AI Darling are non-confidential and SUPE AI Darling
+                will have the right to disclose them without restriction. The use and dissemination of these Submissions for any
+                purpose, commercial or otherwise, is without acknowledgment or compensation to you.
+            </p>
+            <p class="content">
+                You acknowledge and agree that SUPE AI Darling may preserve Content and may disclose Content if required to do so
+                by law or in the good faith belief that such preservation or disclosure is reasonably necessary to: (a) comply
+                with legal process, applicable law, or governmental request ; (b) enforce these Terms of Service; © respond to
+                allegations that any content infringes the rights of a third party; (d) protect the rights, property or personal
+                safety of SUPE AI Darling, our users and the public. You understand that the technical processing and transmission
+                of the Services, including your Content, may involve (a) transmissions over various networks; (b) changes to
+                conform and adapt to technical requirements of connecting networks or devices.
+            </p>
+            <p class="title-2">8.4. Copyright complaints</p>
+            <p class="content">
+                SUPE AI Darling respects the intellectual property rights of others, and we ask our users to do the same. If you
+                believe that your work has been copied in a manner that constitutes copyright infringement, or that your
+                intellectual property rights have been otherwise violated, you should notify SUPE AI Darling of your infringement
+                claim in accordance with the procedures set forth below.
+            </p>
+            <p class="content">
+                We will process and investigate notices of alleged infringement and will take appropriate action under the Digital
+                Millennium Copyright Act ("DMCA") and other applicable intellectual property laws with respect to any alleged or
+                actual infringement. You can contact us by email: hello@game.com
+            </p>
+            <p class="content">To be effective, the notice must be in writing and contain the following information:</p>
+            <ul class="wrap1">
+                <li class="list">
+                    - An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright
+                    or other intellectual property interest;
+                </li>
+                <li class="list">
+                    -A description of the copyrighted work or other intellectual property that you claim has been infringed;
+                </li>
+                <li class="list">
+                    - A description of where the material that you claim is infringing is located on the Service, with sufficient
+                    detail so that we can find it on the Service;
+                </li>
+                <li class="list">- your address, telephone number and email address;</li>
+                <li class="list">
+                    - A statement by you that you have a good faith belief that the disputed use is not authorized by the
+                    copyright or intellectual property owner, its agent, or the law;
+                </li>
+                <li class="list">
+                    - A statement by you, made under penalty of perjury, that the above information in your notice is accurate and
+                    that you are the copyright or intellectual property owner or authorized to act on the copyright or
+                    intellectual property owner's behalf.
+                </li>
+            </ul>
+            <p class="title-2">8.5. Counter notification</p>
+            <p class="content">
+                If you believe that your User Content that was removed (or to which access was disabled) is not infringing, or
+                that you have authorization from the copyright owner, the copyright owner's agent, or under the law to upload and
+                use that content in your User Content, You may send a written counter-notification containing the following
+                information to the Copyright Agent:
+            </p>
+            <ul class="wrap1">
+                <li class="list">- your physical or electronic signature;</li>
+                <li class="list">
+                    -Identify content that has been removed or to which access has been disabled and the location at which the
+                    content appeared before it was removed or disabled;
+                </li>
+                <li class="list">
+                    - A statement that you have a good faith belief that the content was removed or disabled as a result of
+                    mistake or misidentification;
+                </li>
+                <li class="list">
+                    - Your name, address, telephone number and email address, a statement that you consent to the jurisdiction of
+                    the federal court located in the Northern District of California, and a statement that you will accept service
+                    of process from the person who provided notification of the alleged infringement.
+                </li>
+            </ul>
+            <p class="content">
+                If the Copyright Agent receives a counter-notification, SUPE AI Darling will send a copy of the
+                counter-notification to the original complaining party informing that party that it may replace the removed
+                content or cease disabling the content within 10 business days. Unless the copyright owner files an action seeking
+                a court order against the content provider, member or user, the removed content may be replaced, or access to it
+                restored, 10 to 14 business days or more after receipt of the counter-notification. Access, address: at our sole
+                discretion.
+            </p>
+            <p class="content">
+                Repeat Infringer Policy: In compliance with the DMCA and other applicable law, SUPE AI Darling has adopted a
+                policy whereby, in appropriate circumstances and at its sole discretion, SUPE AI Darling may terminate users who
+                are deemed to be repeat infringers. SUPE AI Darling may also, in its sole discretion, restrict access to the
+                Service and/or terminate the membership of any user who infringes the intellectual property rights of others,
+                regardless of whether there is repeat infringement.
+            </p>
+            <p class="title-1">9.Third-party websites</p>
+            <p class="content">
+                The Services may provide, or third parties may provide, links to or other access to other websites and resources
+                on the Internet. We have no control over, are not responsible for, and do not endorse such sites and resources.
+                You further acknowledge and agree that SUPE AI Darling shall not be responsible or liable, directly or indirectly,
+                for any damage or loss caused or alleged to be caused in connection with use of or reliance on any content,
+                events, goods or services. Through any such website or resource. Any transactions you enter into with third
+                parties while using the Services are between you and the third party, and you agree that SUPE AI Darling is not
+                responsible for any losses or claims you may have against any such third parties.
+            </p>
+            <p class="title-1">10. Social Networking Services</p>
+            <p class="content">
+                You can enable, connect to or log into the Services through various online third-party services, such as social
+                media and social networking services such as Facebook, Instagram or Twitter ("Social Networking Services"). By
+                logging in or integrating these social networking services directly into the Service, we make your online
+                experience richer and more personal. In order to take advantage of this feature and functionality, we may ask you
+                to authenticate, register or log in on the website of the social networking service's respective provider. As part
+                of such integration, the social networking service will provide us with access to certain information that you
+                provide to such social networking service, and we will use, store and disclose such information in accordance with
+                our Privacy Policy. However, please remember that the manner in which social networking services use, store and
+                disclose your information is governed solely by the policies of such third parties and SUPE AI Darling is not
+                responsible for the privacy practices or other conduct of any third party website. or services that may be enabled
+                within the Services.
+            </p>
+            <p class="content">
+                FURTHER, SUPE AI Darling is not responsible for the accuracy, availability, or reliability of any information,
+                content, merchandise, data, opinions, advice, or statements related to the Social Networking Services.
+                Accordingly, SUPE AI Darling disclaims all liability and responsibility for any damage or loss caused or alleged
+                to be caused by or in connection with the use of or reliance on any such social networking services. SUPE AI
+                Darling enables these features for convenience only, and the integration or inclusion of these features does not
+                imply endorsement or recommendation.
+            </p>
+            <p class="title-1">11. WARRANTIES, INDEMNIFICATION AND LIABILITY</p>
+            <p class="title-2">11.1. Indemnity and Release</p>
+            <p class="content">
+                You agree to release and indemnify SUPE AI Darling and its affiliates and their officers, employees, directors and
+                agents (collectively, the "Indemnitees") from and against any and all losses, damages, expenses, including
+                reasonable attorneys' fees, rights, Claim against damage. Actions and injuries of any kind (including death)
+                arising out of or related to your use of the Services, any User Content, your connection to the Services, your
+                violation of these Terms of Service, or your violation of any rights of another. Notwithstanding the foregoing,
+                you will have no obligation to indemnify or hold harmless any Indemnitee from any liability, loss, damage or
+                expense arising from any act or omission. If you are a California resident, you waive California Civil Code
+                Section 1542, which states: "A general release does not extend to claims which the creditor does not know or
+                suspect to exist in his favor at the time of executing the release if he or she The knowledge must have had a
+                material effect on his settlement with the debtor." If you are a resident of another jurisdiction, you waive any
+                similar statute or principle.
+            </p>
+            <p class="title-2">11.2. Disclaimer</p>
+            <p class="content">
+                Your use of the Service is at your own risk. The Service is provided on an "as is" and "as available" basis. THE
+                COMPANY EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT
+                LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+            </p>
+            <p class="content">
+                SUPE AI Darling does not guarantee that (I) the Service will meet your requirements, (II) the Service will be
+                uninterrupted, timely, secure, or error-free, (III) the results that may be obtained from the use of the Service
+                will be accurate or reliable, or (IV) you The quality of any products, services, information, or other material
+                purchased or obtained through the Services will meet your expectations.
+            </p>
+            <p class="title-2">11.3. Limitation of Liability</p>
+            <p class="content">
+                You expressly understand and agree that SUPE AI Darling shall not be liable for any indirect, incidental, special,
+                consequential, exemplary damages or damages for loss of profits, including, but not limited to, loss of goodwill,
+                use, data or other intangible losses (even if the Company HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES),
+                WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE, ARISING FROM: (I) THE USE OF OR
+                INABILITY TO USE THE SERVICES; THE COST OF PROCUREMENT OF SUBSTITUTE GOODS AND SERVICES RESULTING FROM DATA,
+                INFORMATION OR SERVICES OR MESSAGES RECEIVED OR TRANSACTIONS ENTERED INTO THROUGH OR FROM THE SERVICE; (III)
+                UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR TRANSMISSIONS OR DATA; (IV) ANY THIRD PARTY STATEMENTS OR CONDUCT ON
+                THE SERVICES; OR (V) ANY OTHER MATTER RELATING TO THE SERVICES. IN NO EVENT SHALL SUPE AI DARLING'S TOTAL
+                LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, OR CAUSES OF ACTION EXCEED THE AMOUNT PAID BY YOU TO COMPANY DURING THE
+                PAST SIX (6) MONTHS OR, IF GREATER, ONE One hundred dollars ($100).
+            </p>
+            <p class="content">
+                Some jurisdictions do not allow the disclaimer or exclusion of certain warranties, or the limitation or exclusion
+                of liability for incidental or consequential damages. ACCORDINGLY, SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO
+                YOU OR BE ENFORCEABLE AGAINST YOU. If you are dissatisfied with any portion of the Service, or these Terms of
+                Service, your sole remedy is to discontinue using the Service.
+            </p>
+            <p class="content">
+                If you are a user from the State of New Jersey, the scope of the above sections titled "Disclaimer" and
+                "Limitation of Liability" is limited to the extent permitted by the laws of the State of New Jersey. If any part
+                of these sections is held to be invalid under the laws of the State of New Jersey, the invalidity of that part
+                shall not affect the validity of the remaining portions of the applicable section.
+            </p>
+            <p class="title-1">12. Resolution of Disputes by Binding Arbitration</p>
+            <p class="title-2">12.1. arbitration agreement</p>
+            <p class="content">
+                This “Resolution of Disputes by Binding Arbitration” section is referred to in these Terms of Service as the
+                “Arbitration Agreement.” You agree that any and all disputes or claims that have arisen or may arise between you
+                and SUPE AI Darling, whether arising out of or in connection with these Terms of Service (including any alleged
+                breach of the Terms), the Services, any advertising, any aspect of the relationship Any transaction or transaction
+                between us shall be resolved exclusively by final and binding arbitration (rather than in court) under the terms
+                of this Arbitration Agreement, except that you may assert an individual claim in small claims court (if your claim
+                qualifies condition). Furthermore, this arbitration agreement does not prevent you from bringing issues to the
+                attention of federal, state, or local agencies, which may seek relief from us on your behalf, if permitted by law.
+                YOU AGREE THAT, BY ENTERING INTO THESE TERMS OF SERVICE, YOU AND SUPE AI DARLING ARE EACH WAIVING THE RIGHT TO A
+                TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION. Your rights will be determined by a neutral arbitrator, not a
+                judge or jury. The Federal Arbitration Act governs the interpretation and enforcement of this arbitration
+                agreement.
+            </p>
+            <p class="title-2">12.2. Prohibition of class and representative actions and non-individualized relief</p>
+            <p class="content">
+                You and SUPE AI Darling agree that each of us may bring claims against the other only in our individual capacities
+                and not as a plaintiff or class member in any purported class or representative action or proceeding. Unless both
+                you and SUPE AI Darling agree, the arbitrator may not consolidate or consolidate more than one person's or party's
+                claims, and may not otherwise preside over any form if a consolidated, representative, or class proceeding.
+                Further, the arbitrator may award relief (including monetary, injunctive, and declaratory relief) only in favor of
+                the individual individual seeking relief and only to the extent necessary to provide relief necessitated by that
+                party’s individual claim(s).
+            </p>
+            <p class="title-2">12.3. Pre-arbitration dispute resolution</p>
+            <p class="content">
+                SUPE AI Darling is always keen to resolve disputes amicably and efficiently, and most customer concerns can be
+                resolved quickly and to customer satisfaction by emailing customer support at hello@game.com. If such efforts are
+                unsuccessful, a party intending to seek arbitration must first send a written Notice of Dispute ("Notice") to the
+                other party by certified mail. Notices to SUPE AI Darling should be sent to hello@game.com (the “Notice Address”).
+                The notice must (i) describe the nature and basis of the claim or dispute, and (ii) set forth the specific relief
+                sought. If SUPE AI Darling and you do not resolve the claim within sixty (60) calendar days after the Notice is
+                received, you or SUPE AI Darling may commence an arbitration proceeding. During the arbitration, the amount of any
+                settlement offer made by SUPE AI Darling or you may not be disclosed to the arbitrator until after the arbitrator
+                determines the amount, if any, to which you or SUPE AI Darling is entitled.
+            </p>
+            <p class="title-2">12.4. Arbitration proceedings</p>
+            <p class="content">
+                The arbitration will be conducted by a neutral arbitrator under the rules and procedures of the American
+                Arbitration Association ("AAA"), including the AAA's Supplementary Procedures for Consumer Related Disputes
+                (collectively, the "AAA Rules"), as modified by this Arbitration Agreement. For information about AAA, please
+                visit its website: http://www.adr.org. For information about the AAA Rules and Consumer Dispute Fees, please visit
+                the AAA Consumer Arbitration page at: http://www.adr.org/consumer_ Arbitration. If there is any inconsistency
+                between any provision of the AAA Rules and any provision of this Arbitration Agreement, the applicable provision
+                of this Arbitration Agreement will control, unless the arbitrator determines that application of the inconsistent
+                Arbitration Agreement provision would not result in a fundamentally fair arbitration. The arbitrator must also
+                follow the provisions of these Terms of Service like a court. All issues are for the arbitrator to decide,
+                including, but not limited to, issues related to the scope, enforceability and arbitrability of this Arbitration
+                Agreement. Although arbitration proceedings are generally simpler and more streamlined than trials and other
+                judicial proceedings, the arbitrator can award on an individual basis the same damages and relief that a court
+                would award to an individual under the Terms of Service and applicable law. The arbitrator's decision is
+                enforceable in court and may be overturned by a court only for very limited reasons.
+            </p>
+            <p class="content">
+                Unless SUPE AI Darling and you agree otherwise, any arbitration hearing will be held at a location reasonably
+                convenient to both parties, with due regard to the parties' ability to travel and other relevant circumstances. If
+                the parties cannot agree on a location, the decision will be made by AAA. If your claim is for $10,000 or less,
+                SUPE AI Darling agrees that you may choose whether the arbitration shall be conducted solely on the basis of
+                documents submitted to the arbitrator, by a telephonic hearing, or by an in-person hearing as set forth in the AAA
+                Rules. If your claim is for more than $10,000, the right to a hearing will be determined by the AAA Rules.
+                Regardless of how the arbitration is conducted, the arbitrator shall issue a written decision that is reasoned and
+                sufficient to explain the essential findings and conclusions on which the award is based.
+            </p>
+            <p class="title-2">12.5. Arbitration fees</p>
+            <p class="content">
+                Unless otherwise provided in this Arbitration Agreement, payment of all filing, administration, and arbitrator
+                fees (collectively, “Arbitration Fees”) will be governed by the AAA Rules. If the value of the relief sought is
+                $75,000 or less, SUPE AI Darling will pay all arbitration fees, at your request. If the value of the relief sought
+                exceeds $75,000 and you are able to demonstrate to the arbitrator that you are financially unable to pay your
+                portion of the arbitration fees, or the arbitrator determines that for any reason you are not required to pay your
+                portion of the arbitration fees, SUPE AI Darling will pay a portion of your costs. Additionally, if you
+                demonstrate to the arbitrator that the costs of arbitration will be prohibitive as compared to the costs of
+                litigation, SUPE AI Darling will pay as much of the arbitration fees as the arbitrator deems necessary to prevent
+                the arbitration from being cost-prohibitive. Payment of any attorney's fees shall be governed by the AAA Rules.
+            </p>
+            <p class="title-2">12.6. Confidential</p>
+            <p class="content">
+                All aspects of the arbitration proceedings and any award, decision or award by the arbitrator will be strictly
+                confidential for the benefit of the parties.
+            </p>
+            <p class="title-2">12.7. Divisibility</p>
+            <p class="content">
+                If a court or arbitrator decides that any term or provision of this Arbitration Agreement (other than the
+                subsection above titled “Prohibition of Class and Representative Actions and Non-Individualized Relief”) is
+                invalid or unenforceable, then the parties agree to replace that term or provision or provision is valid and
+                enforceable and comes closest to expressing the intent of the invalid or unenforceable term or provision, and this
+                Arbitration Agreement shall be enforceable as so modified. If a court or arbitrator decides that any of the
+                provisions in the subsection titled “Prohibition of Class and Representative Actions and Non-Individualized
+                Relief” is invalid or unenforceable, then the entire Agreement to Arbitrate shall be null and void. The remainder
+                of the Terms of Service will continue to apply.
+            </p>
+            <p class="title-2">12.8. Future changes to the arbitration agreement</p>
+            <p class="content">
+                Notwithstanding anything to the contrary in these Terms of Service, SUPE AI Darling agrees that if SUPE AI Darling
+                makes any future changes to this Arbitration Agreement (other than a change to the Notice Address) while you are a
+                user of the Service, you may reject any such Changes shall be subject to written notice by SUPE AI Darling within
+                thirty (30) calendar days of the change to the notification address above. By rejecting any future changes, you
+                agree that any disputes between us will be arbitrated in accordance with the language of this Arbitration
+                Agreement as of the date you first accepted these Terms of Service (or accepted any subsequent changes to these
+                Terms of Service).
+            </p>
+            <p class="title-1">13. General conditions</p>
+            <p class="title-2">13.1. Termination</p>
+            <p class="content">
+                You agree that SUPE AI Darling may, in its sole discretion, suspend or terminate your account (or any part
+                thereof) or use of the Services for any reason (including, but not limited to, lack of use) and remove and discard
+                any content from the Services or, if SUPE AI Darling believes that you have violated these Terms of Service or
+                that your conduct is inconsistent with the letter or spirit of these Terms of Service. Any suspected fraudulent,
+                abusive or illegal activity that may be grounds for termination of your use of the Services may be referred to the
+                appropriate law enforcement agency. SUPE AI Darling may also, in its sole discretion, cease providing the
+                Services, or any part thereof, at any time, with or without notice. You agree that any termination of your access
+                to the Service under any provision of these Terms of Service may be effected without prior notice, and acknowledge
+                and agree that SUPE AI Darling may immediately deactivate or delete your account and all related information in
+                your account. information and files and/or bar any further access to such files or services. Further, you agree
+                that SUPE AI Darling will not be liable to you or any third party for any termination of your access to the
+                Service.
+            </p>
+            <p class="title-2">13.2. User disputes</p>
+            <p class="content">
+                You agree that you are solely responsible for, and that SUPE AI Darling has no liability for, any other user's
+                interactions related to the Service. SUPE AI Darling reserves the right, but has no obligation, to become involved
+                in any manner in any dispute between you and any other user of the Service.
+            </p>
+            <p class="title-2">13.3. entire agreement</p>
+            <p class="content">
+                These Terms of Service constitute the entire agreement between you and SUPE AI Darling and govern your use of the
+                Service, superseding any prior agreements between you and SUPE AI Darling regarding the Service. You may also be
+                subject to additional terms and conditions that may apply when you use affiliate or third-party services,
+                third-party content or third-party software.
+            </p>
+            <p class="title-2">13.4. Choice of law</p>
+            <p class="content">
+                These Terms of Service will be governed by the laws of the State of California, without regard to its conflict of
+                law provisions. For any dispute or claim not subject to arbitration, as set forth above, you and SUPE AI Darling
+                agree to submit to the personal and exclusive jurisdiction of the state and federal courts located in San
+                Francisco County, California. The failure of SUPE AI Darling to exercise or enforce any right or provision of
+                these Terms of Service shall not constitute a waiver of such right or provision. If any provision of the Terms of
+                Service is found by a court of competent jurisdiction to be invalid, the parties nevertheless agree that the court
+                should endeavor to give effect to the parties' intentions as reflected in that provision and the other provisions
+                of the Terms of Service. The parties remain in full force and effect. You agree that regardless of any statute or
+                law to the contrary, any claim or cause of action arising out of or related to use of the Service or these Terms
+                of Service must be filed within one (1) year after such claim or cause of action arose or forever. Prohibited. A
+                printed version of this agreement and of any notice given in electronic form will be admissible in judicial or
+                administrative proceedings based upon or relating to this agreement to the same extent and subject to the same
+                conditions as other business documents and records originally generated and maintained. Printed form. These Terms
+                of Service may not be assigned by you without SUPE AI Darling’s prior written consent, but SUPE AI Darling may
+                assign or transfer these Terms of Service, in whole or in part, without restriction. The section headings in these
+                Terms of Service are for convenience only and have no legal or contractual effect. Notices may be given to you by
+                email or regular mail. The Service may also provide you with notices of changes to these Terms of Service or other
+                matters by displaying notices or links to notifications on the Service.
+            </p>
+            <p class="title-1">14. Your privacy</p>
+            <p class="content">
+                At SUPE AI Darling, we respect the privacy of our users. Please see our Privacy Policy for details. By using the
+                Service, you consent to the collection and use of personal data as described therein.
+            </p>
+            <p class="title-1">question? Worried? Any suggestions?</p>
+            <p class="content">
+                Please contact us at hello@game.com to report any violation of these Terms of Service or to ask us any questions
+                about these Terms of Service or our Services.
+            </p>
+        </div>
+        <script>
+            // document.addEventListener("DOMContentLoaded", function () {
+            //     var section24 = document.getElementById("section-2.4");
+            //     if (section24) {
+            //         section24.scrollIntoView({ behavior: "smooth" });
+            //     }
+            // });
+            function getRequest() {
+                var splitValue = decodeURI(location.href).split("?")[1]; //获取url中"?"符后的字串
+                var url = "?" + splitValue;
+                var theRequest = new Object();
+                if (url.indexOf("?") != -1) {
+                    var str = url.substr(1);
+                    var strs = [];
+                    strs = str.split("&");
+                    for (var i = 0; i < strs.length; i++) {
+                        theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                    }
+                }
+                return theRequest;
+            }
+            const appValue = getRequest("app").app;
+            if (appValue == 1) {
+                const box = document.getElementsByClassName("box")[0];
+                const title = document.getElementsByClassName("title")[0];
+                box.style.background = "none";
+                title.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
