@@ -5,8 +5,6 @@ import store from "@/store";
 let lastAudioDuration = 0; // 保存上一次合成的音频时长
 let speechObj = {};
 let currentlyPlayingAudioElement = null; // 保存当前播放的音频的
-// const subscriptionKey = "b54d881514cd4a6892927da873087287";
-// const region = "eastasia";
 let ossCredentials = null; // 保存OSS临时凭证的全局变量
 
 // 异步获取OSS临时凭证，如果已经存在有效的凭证，则不再调用接口

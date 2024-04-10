@@ -65,9 +65,7 @@ import Loading from "@/components/Loading";
 import { appChatUrlInfo } from "@/utils/webview";
 let lastAudioDuration = 0; // 保存上一次合成的音频时长
 let currentlyPlayingAudioElement = null; // 保存当前播放的音频的
-// const subscriptionKey = "33c82ea3d4ef4ed89da76cc2d250f188";
 
-// const region = "eastasia";
 export default {
     props: ["isShowSounds"],
     components: { Loading },
