@@ -199,7 +199,8 @@ function sendMessageToParent(status, data) {
             box-sizing: border-box;
             border-radius: 0.2rem;
             margin-top: 0.12rem;
-            background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+            // background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+            background: var(--bg-btn-body-action-send);
             img {
                 width: 0.16rem;
                 height: 0.16rem;

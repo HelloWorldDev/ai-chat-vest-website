@@ -8,6 +8,8 @@ import i18n from "./plugins/i18n";
 import "./plugins/adaptive";
 import "./styles/common.less";
 import "./styles/vant.less";
+import "./assets/theme/theme.less";
+
 import api from "./service/api";
 import { myVanToast, myDialog } from "./plugins/vant";
 import SvgIcon from "@/icons";

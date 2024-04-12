@@ -57,14 +57,16 @@ const aigfPoints = ref("");
 .exhchange-page {
     flex: 1;
     box-sizing: border-box;
-    background: #161820;
+    // background: #161820;
+    background: var(--bg-chat-primary);
     width: 100%;
     section {
         flex: 1;
         display: flex;
         flex-direction: column;
         // justify-content: space-between;
-        background: #161820;
+        // background: #161820;
+        background: var(--bg-chat-primary);
         padding: 0.57rem 0.2rem;
         box-sizing: border-box;
         .title {
@@ -81,7 +83,8 @@ const aigfPoints = ref("");
             width: 100%;
             height: 0.52rem;
             border-radius: 8px;
-            background: #1f212b;
+            // background: #1f212b;
+            background: var(--bg-input-box);
             margin-top: 0.1rem;
             display: flex;
             justify-content: space-between;
@@ -95,7 +98,8 @@ const aigfPoints = ref("");
             .supePoints {
                 flex: 2;
                 height: 100%;
-                background: #1f212b;
+                // background: #1f212b;
+                background: var(--bg-input-box);
                 color: #ffffff;
                 font-size: 16px;
                 font-style: normal;

@@ -12,7 +12,8 @@
     height: 0.45rem;
     flex-shrink: 0;
     color: #ffffff;
-    background: #161820;
+    // background: #161820;
+    background: var(--bg-chat-primary);
     .l,
     .exitIndex {
         width: 0.45rem;

@@ -33,26 +33,30 @@ const withdraw = () => {
 .wallet-page {
     flex: 1;
     box-sizing: border-box;
-    background: #161820;
+    // background: #161820;
+    background: var(--bg-chat-primary);
     width: 100%;
     section {
         flex: 1;
         display: flex;
         flex-direction: column;
-        background: #161820;
+        // background: #161820;
+        background: var(--bg-chat-primary);
         padding: 0.57rem 0.2rem;
         box-sizing: border-box;
         .wallet-wrap {
             width: 100%;
             height: 1.23rem;
             border-radius: 12px;
-            background: #2a2d39;
+            // background: #2a2d39;
+            background: var(--bg-primary1);
             margin-top: 0.12rem;
             .ai {
                 width: 100%;
                 height: 0.82rem;
                 border-radius: 12px;
-                background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                // background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                background: var(--bg-btn-body-action-send);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;

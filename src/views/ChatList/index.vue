@@ -122,6 +122,7 @@ onBeforeUnmount(() => {
     flex-direction: column;
     justify-content: space-between;
     // background: #161820; //发布正式时注释掉！！！！！！！
+    background: var(--bg-chat-primary); //发布正式时注释掉！！！！！！！
     scrollbar-width: thin !important;
     scrollbar-color: transparent !important;
     ::-webkit-scrollbar,
@@ -191,7 +192,8 @@ onBeforeUnmount(() => {
                 align-items: center;
                 justify-content: space-between;
                 border-radius: 0.12rem;
-                background: rgba(106, 119, 141, 0.06);
+                // background: rgba(106, 119, 141, 0.06);
+                background: var(--bg-chat-list-li);
                 padding: 0.12rem;
                 box-sizing: border-box;
                 margin-bottom: 0.08rem;

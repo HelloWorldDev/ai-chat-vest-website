@@ -33,7 +33,8 @@ export default {
         border-radius: 0.12rem;
         padding: 0.16rem;
         box-sizing: border-box;
-        background: #1f212b;
+        // background: #1f212b;
+        background: var(--bg-input-box);
         .loading {
             width: 0.42rem;
             height: 0.42rem;

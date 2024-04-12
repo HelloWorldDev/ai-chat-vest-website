@@ -434,11 +434,13 @@ export default {
 
         //显示用户协议
         showAgreement() {
-            if (process.env.NODE_ENV == "production") {
-                appPushStaticWeb("https://bot.supe.ai/html/subscription-en.html", "Terms of Service");
-            } else {
-                appPushStaticWeb("https://lmq.nihao.com/aiChat/dist/html/subscription-en.html", "Terms of Service");
-            }
+            appPushStaticWeb(process.env.VUE_APP_GO_TO_URL + "html/subscription-en.html", "Terms of Service");
+            // 代码内不要写死域名，配置里面都有，拼接！！
+            // if (process.env.NODE_ENV == "production") {
+            //     appPushStaticWeb("https://bot.supe.ai/html/subscription-en.html", "Terms of Service");
+            // } else {
+            //     appPushStaticWeb("https://lmq.nihao.com/aiChat/dist/html/subscription-en.html", "Terms of Service");
+            // }
         },
         //获取数据
         getVipConfig() {
@@ -572,7 +574,8 @@ export default {
 .vip-dialog {
     width: 100%;
     height: 100%;
-    background: #161820;
+    // background: #161820;
+    background: var(--bg-chat-primary);
     // position: fixed;
     // top: 0;
     // left: 0;

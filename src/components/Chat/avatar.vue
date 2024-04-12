@@ -21,7 +21,8 @@ defineProps(["avatarInfo"]);
 .avatar-component {
     display: flex;
     border-radius: 50%;
-    background-color: #2a2d39;
+    // background-color: #2a2d39;
+    background-color: var(--bg-primary1);
     overflow: hidden;
     &:deep(.van-image) {
         width: 100%;

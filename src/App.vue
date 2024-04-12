@@ -1,5 +1,5 @@
 <template>
-    <div :class="['app', 'app-' + lang]">
+    <div :class="['app', 'app-theme', 'app-' + lang]">
         <router-view />
         <Loading v-if="aiChatLoading" />
     </div>

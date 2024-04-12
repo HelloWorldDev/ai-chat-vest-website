@@ -120,7 +120,8 @@ const showBuyFail = () => {
         display: flex;
         flex-direction: column;
         // justify-content: space-between;
-        background: #161820;
+        // background: #161820;
+        background: var(--bg-chat-primary);
         padding: 0.57rem 0.12rem 0.12rem;
         box-sizing: border-box;
         .gem {
@@ -181,7 +182,8 @@ const showBuyFail = () => {
         .gem-list {
             width: 100%;
             min-height: 0.64rem;
-            background: #1f212b;
+            // background: #1f212b;
+            background: var(--bg-input-box);
             border-radius: 0.15rem;
             .list {
                 width: 100%;

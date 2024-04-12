@@ -308,7 +308,8 @@ const getListP = () => {
 .exchange-list {
     flex: 1;
     box-sizing: border-box;
-    background: #161820;
+    // background: #161820;
+    background: var(--bg-chat-primary);
     width: 100%;
     &:deep(.van-tabs) {
         margin-top: 0.45rem;
@@ -325,7 +326,8 @@ const getListP = () => {
             z-index: 111;
 
             .van-tabs__nav {
-                background: #161820 !important;
+                // background: #161820 !important;
+                background: var(--bg-chat-primary) !important;
                 padding-bottom: 10px;
                 .van-tab--line {
                     color: #707988;
@@ -348,7 +350,8 @@ const getListP = () => {
     }
     .empty-order {
         padding-top: 50%;
-        background: #161820;
+        // background: #161820;
+        background: var(--bg-chat-primary);
         flex: 1;
         font-size: 0.18rem;
         color: #ffffff;
@@ -361,7 +364,8 @@ const getListP = () => {
         width: 100%;
         height: 100%;
         border-radius: 0.12rem;
-        background: #161820;
+        // background: #161820;
+        background: var(--bg-chat-primary);
         .list {
             width: 100%;
             height: 0.71rem;
@@ -370,7 +374,8 @@ const getListP = () => {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #1f212b;
+            // border-bottom: 1px solid #1f212b;
+            border-bottom: 1px solid var(--bg-input-box);
             .l {
                 display: flex;
                 flex-direction: column;

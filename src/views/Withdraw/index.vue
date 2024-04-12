@@ -58,14 +58,16 @@ const chain = ref("BRC-20");
 .withdraw-page {
     flex: 1;
     box-sizing: border-box;
-    background: #161820;
+    // background: #161820;
+    background: var(--bg-chat-primary);
     width: 100%;
     section {
         flex: 1;
         display: flex;
         flex-direction: column;
         // justify-content: space-between;
-        background: #161820;
+        // background: #161820;
+        background: var(--bg-chat-primary);
         padding: 0.57rem 0.2rem;
         box-sizing: border-box;
         .wrap {
@@ -91,7 +93,8 @@ const chain = ref("BRC-20");
                     width: 1.62rem;
                     height: 0.52rem;
                     border-radius: 8px;
-                    background: #1f212b;
+                    // background: #1f212b;
+                    background: var(--bg-input-box);
                     margin-top: 0.1rem;
                     display: flex;
                     justify-content: space-around;
@@ -105,7 +108,8 @@ const chain = ref("BRC-20");
                     .supePoints {
                         width: 1.12rem;
                         height: 100%;
-                        background: #1f212b;
+                        // background: #1f212b;
+                        background: var(--bg-input-box);
                         color: #ffffff;
                         font-size: 16px;
                         font-style: normal;
@@ -135,7 +139,8 @@ const chain = ref("BRC-20");
             width: 100%;
             height: 0.52rem;
             border-radius: 8px;
-            background: #1f212b;
+            // background: #1f212b;
+            background: var(--bg-input-box);
             margin-top: 0.1rem;
             display: flex;
             justify-content: space-between;
@@ -149,7 +154,8 @@ const chain = ref("BRC-20");
             .supePoints {
                 flex: 2;
                 height: 100%;
-                background: #1f212b;
+                // background: #1f212b;
+                background: var(--bg-input-box);
                 color: #ffffff;
                 font-size: 16px;
                 font-style: normal;

@@ -131,28 +131,33 @@ function sendMessageToParent(data) {
                 box-sizing: border-box;
                 margin-right: 0.08rem;
                 border-radius: 0.2rem;
-                background: #404352;
+                // background: #404352;
+                background: var(--bg-btn-body-action);
                 font-size: 0.14rem;
                 font-weight: 500;
                 line-height: normal;
             }
             .photo {
-                background: linear-gradient(270deg, #5555ff 0%, #6666ff 100%);
+                // background: linear-gradient(270deg, #5555ff 0%, #6666ff 100%);
+                background: var(--bg-btn-body-action-photo);
             }
             .video {
-                background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                // background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                background: var(--bg-btn-body-action-video);
             }
         }
     }
     &:deep(.van-popup) {
-        background-color: #1f212b;
+        // background-color: #1f212b;
+        background-color: var(--bg-input-box);
         .header {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 0.16rem 0;
-            border-bottom: 1px solid #161820;
+            // border-bottom: 1px solid #161820;
+            border-bottom: 1px solid var(--bg-chat-primary);
             p {
                 font-size: 0.18rem;
                 font-weight: 500;
@@ -187,7 +192,8 @@ function sendMessageToParent(data) {
             .van-cell {
                 width: 100%;
                 height: 0.52rem;
-                background: #161820;
+                // background: #161820;
+                background: var(--bg-chat-primary);
                 border-radius: 0.12rem;
                 margin-top: 0.16rem;
                 margin-bottom: 0.08rem;
@@ -227,7 +233,8 @@ function sendMessageToParent(data) {
                         line-height: 0.16rem;
                         padding: 0.12rem 0.12rem;
                         box-sizing: border-box;
-                        background: #2a2d39;
+                        // background: #2a2d39;
+                        background: var(--bg-primary1);
                         border-radius: 0.2rem;
                         white-space: nowrap;
                     }
@@ -250,11 +257,13 @@ function sendMessageToParent(data) {
                     &:nth-child(1) {
                         margin-right: 0.12rem;
                         color: #707988;
-                        background: #2a2d39;
+                        // background: #2a2d39;
+                        background: var(--bg-primary1);
                     }
                     &:nth-child(2) {
                         color: #fff;
-                        background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                        // background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                        background: var(--bg-btn-body-action-send);
                     }
                 }
             }

@@ -345,7 +345,8 @@ const showPoints = () => {
         display: flex;
         flex-direction: column;
         // justify-content: space-between;
-        background: #161820;
+        // background: #161820;
+        background: var(--bg-chat-primary);
         padding: 0.57rem 0.12rem;
         box-sizing: border-box;
         .gem {
@@ -428,7 +429,8 @@ const showPoints = () => {
             width: 100%;
             height: 0.76rem;
             border-radius: 12px;
-            background: var(--2, #1f212b);
+            // background: var(--2, #1f212b);
+            background: var(--bg-input-box);
             margin-top: 0.08rem;
             display: flex;
             justify-content: space-between;
@@ -503,7 +505,8 @@ const showPoints = () => {
                 height: 0.32rem;
                 line-height: 0.32rem;
                 border-radius: 22px;
-                background: #2a2d39;
+                // background: #2a2d39;
+                background: var(--bg-primary1);
                 font-size: 0.14rem;
                 font-weight: bold;
                 color: #707988;
@@ -611,7 +614,8 @@ const showPoints = () => {
                     height: 0.32rem;
                     line-height: 0.32rem;
                     border-radius: 22px;
-                    background: #2a2d39;
+                    // background: #2a2d39;
+                    background: var(--bg-primary1);
                     font-size: 0.14rem;
                     font-weight: bold;
                     color: #707988;
@@ -643,8 +647,8 @@ const showPoints = () => {
                     width: 100%;
                     height: 0.52rem;
                     border-radius: 12px;
-                    border: 1px solid var(---, #ff4d70);
-                    background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                    // background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                    background: var(--bg-btn-body-action-send);
                     display: flex;
                     justify-content: space-between;
                     align-items: center;

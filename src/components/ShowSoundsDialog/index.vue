@@ -457,7 +457,8 @@ export default {
     &:deep(.pop) {
         top: auto !important;
         .mixin-SF-medium;
-        background: #1f212b;
+        // background: #1f212b;
+        background: var(--bg-input-box);
         min-height: 5.15rem;
         .top {
             width: 100%;
@@ -492,7 +493,8 @@ export default {
         }
         .line {
             height: 0.01rem;
-            background: #161820;
+            // background: #161820;
+            background: var(--bg-chat-primary);
             margin-bottom: 0.15rem;
         }
         .en {
@@ -531,7 +533,8 @@ export default {
                 }
             }
             .normal {
-                background: #2a2d39;
+                // background: #2a2d39;
+                background: var(--bg-primary1);
                 .wrap {
                     & > p {
                         font-size: 0.16rem;
@@ -557,7 +560,8 @@ export default {
             .cancel {
                 width: 1.61rem;
                 height: 0.48rem;
-                background: #2a2d39;
+                // background: #2a2d39;
+                background: var(--bg-primary1);
                 border-radius: 0.48rem;
                 border: 0;
                 color: #707988;
@@ -568,7 +572,8 @@ export default {
             .unlock {
                 width: 1.61rem;
                 height: 0.48rem;
-                background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                // background: linear-gradient(90deg, #ff5f74 0%, #ff3c6a 100%);
+                background: var(--bg-btn-body-action-send);
                 border-radius: 0.48rem;
                 border: 0;
                 color: #ffffff;

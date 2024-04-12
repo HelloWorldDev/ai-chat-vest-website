@@ -156,7 +156,6 @@
                                 @update:model-value="onVanSwitchUpdate"
                                 size="32"
                                 active-color="#00CB5D"
-                                inactive-color="#161820"
                             >
                                 <template #background>
                                     <div class="text">
@@ -897,7 +896,8 @@ onBeforeUnmount(() => {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #161820;
+    // background: #161820;
+    background: var(--bg-chat-primary);
     overflow: hidden;
     .header-main {
         flex: 1;
@@ -907,7 +907,8 @@ onBeforeUnmount(() => {
         justify-content: space-between;
         padding: 0 0.16rem;
         box-sizing: border-box;
-        border-bottom: 1px solid #1f212b;
+        // border-bottom: 1px solid #1f212b;
+        border-bottom: 1px solid var(--bg-input-box);
         .l,
         .r {
             display: flex;
@@ -1126,7 +1127,8 @@ onBeforeUnmount(() => {
                                 height: 2rem;
                                 border-radius: 0.08rem;
                                 overflow: hidden;
-                                background-color: #2a2d39;
+                                // background-color: #2a2d39;
+                                background-color: var(--bg-primary1);
                             }
                         }
                     }
@@ -1139,10 +1141,12 @@ onBeforeUnmount(() => {
                                 position: absolute;
                                 top: 0.12rem;
                                 right: -0.07rem;
-                                color: #5555ff;
+                                // color: #5555ff;
+                                color: var(--bg-primary);
                             }
                             .audio-msg {
-                                background: #5555ff;
+                                // background: #5555ff;
+                                background: var(--bg-primary);
                                 .playAudioLoading {
                                     span {
                                         order: -1;
@@ -1155,7 +1159,8 @@ onBeforeUnmount(() => {
                             }
                             .text-msg {
                                 p {
-                                    background: #5555ff;
+                                    // background: #5555ff;
+                                    background: var(--bg-primary);
                                 }
                             }
                         }
@@ -1168,11 +1173,13 @@ onBeforeUnmount(() => {
                                 position: absolute;
                                 top: 0.12rem;
                                 left: -0.07rem;
-                                color: #2a2d39;
+                                // color: #2a2d39;
+                                color: var(--bg-primary1);
                                 transform: rotateY(180deg);
                             }
                             .audio-msg {
-                                background: #2a2d39;
+                                // background: #2a2d39;
+                                background: var(--bg-primary1);
                                 i {
                                     position: absolute;
                                     right: -0.16rem;
@@ -1180,7 +1187,8 @@ onBeforeUnmount(() => {
                             }
                             .text-msg {
                                 p {
-                                    background: #2a2d39;
+                                    // background: #2a2d39;
+                                    background: var(--bg-primary1);
                                 }
                             }
                         }
@@ -1196,14 +1204,16 @@ onBeforeUnmount(() => {
             .input-box {
                 width: 100%;
                 display: flex;
-                background: #1f212b;
+                // background: #1f212b;
+                background: var(--bg-input-box);
                 padding: 0.08rem 0.16rem 0.22rem;
                 box-sizing: border-box;
                 .activeColor {
                     background-color: #00cb5d;
                 }
                 .inactiveColor {
-                    background-color: #161820;
+                    // background-color: #161820;
+                    background-color: var(--bg-input);
                 }
                 .bg {
                     width: 85px;
@@ -1219,6 +1229,8 @@ onBeforeUnmount(() => {
                     }
                     &:deep(.my-van-switch) {
                         display: flex;
+                        // background-color: #161820;
+                        background-color: var(--bg-input);
                         .text {
                             width: 0.53rem;
                             font-size: 0.12rem;
@@ -1257,7 +1269,8 @@ onBeforeUnmount(() => {
                     .van-cell {
                         padding: 0;
                         height: 0.4rem;
-                        background: #161820;
+                        // background: #161820;
+                        background: var(--bg-input);
                         border-radius: 0.2rem;
                         .van-field__control {
                             height: 0.4rem;
@@ -1287,6 +1300,7 @@ onBeforeUnmount(() => {
                                 width: 0.32rem;
                                 height: 0.32rem;
                                 flex-shrink: 0;
+                                color: var(--color-btn-send-mes);
                             }
                         }
                     }

@@ -135,7 +135,8 @@ onUnmounted(() => {});
             padding-left: 0.2rem;
             box-sizing: border-box;
             .icon-left {
-                background: #2a2d39;
+                // background: #2a2d39;
+                background: var(--bg-primary1);
                 border-radius: 50%;
             }
         }
@@ -152,7 +153,8 @@ onUnmounted(() => {});
             box-sizing: border-box;
             &:deep(.van-button) {
                 border-radius: 0.08rem;
-                background: #2a2d39;
+                // background: #2a2d39;
+                background: var(--bg-primary1);
                 padding: 0.1rem 0.12rem;
                 box-sizing: border-box;
                 font-size: 0.14rem;
