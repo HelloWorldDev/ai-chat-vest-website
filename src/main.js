@@ -8,6 +8,7 @@ import i18n from "./plugins/i18n";
 import "./plugins/adaptive";
 import "./styles/common.less";
 import "./styles/vant.less";
+import "./assets/theme/style.less";
 
 import api from "./service/api";
 import { myVanToast, myDialog } from "./plugins/vant";
@@ -22,13 +23,12 @@ console.log(process.env.VUE_APP_WEB_STYLE, "process.env.VUE_APP_WEB_STYLE");
 console.log(webStyle, "webStyle");
 console.log(!!webStyle, "webStyle11111");
 console.log(!webStyle, "webStyle11111");
-try {
-    console.log("到我");
-    require(`./assets/theme/style-${webStyle}.less`);
-} catch (err) {
-    console.log("到默认");
-    if (!webStyle) {
-        require(`./assets/theme/style.less`);
+if (webStyle) {
+    try {
+        console.log("到我");
+        require(`./assets/theme/style-${webStyle}.less`);
+    } catch (err) {
+        console.log("错误");
     }
 }
 
