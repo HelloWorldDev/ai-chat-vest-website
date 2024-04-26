@@ -1,5 +1,5 @@
 <template>
-    <div :class="['app', 'app-' + lang]">
+    <div :class="['app', 'app-theme' + webStyle, 'app-' + lang]">
         <router-view />
         <Loading v-if="aiChatLoading" />
     </div>
@@ -14,6 +14,7 @@ const { $jsBridge } = getCurrentInstance().proxy;
 const store = useStore();
 const lang = computed(() => store.state.lang);
 const aiChatLoading = computed(() => store.state.aiChatLoading);
+const webStyle = computed(() => store.state.webStyle);
 
 onMounted(() => {
     store.commit("updateAiChatLoading", false);
