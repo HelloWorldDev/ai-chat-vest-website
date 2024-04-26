@@ -4,6 +4,7 @@ import { getAiBotChatEnter } from "../service/api";
 const debug = process.env.NODE_ENV !== "production";
 
 const state = {
+    webStyle: "", //整体色系
     lang: "en-US",
     aiChatLoading: false,
     voiceType: "en-US-NancyNeural", //以下7个变量为合成语音的参数（声音类型，速度，语调等）
@@ -24,6 +25,9 @@ const state = {
 };
 
 const mutations = {
+    updateWebStyle(state, value) {
+        state.webStyle = value;
+    },
     updateLang(state, value) {
         state.lang = value;
     },

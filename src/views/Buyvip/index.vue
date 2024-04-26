@@ -337,7 +337,7 @@ import defaultImg from "@/assets/img/Gem/WechatIMG398.jpg";
 export default {
     props: [],
     computed: {
-        ...mapState(["aiChatGFInfo", "aiChatExtInfo", "aiChatUserInfo", "bgImg"]),
+        ...mapState(["aiChatGFInfo", "aiChatExtInfo", "aiChatUserInfo", "bgImg", "webStyle"]),
         swipeStyle() {
             const leftPadding = this.swipeIndex === 0 ? "0" : "12px";
             const rightPadding = this.swipeIndex === 1 ? "0" : "12px";
@@ -434,7 +434,10 @@ export default {
 
         //显示用户协议
         showAgreement() {
-            appPushStaticWeb(process.env.VUE_APP_GO_TO_URL + "html/subscription-en.html", "Terms of Service");
+            appPushStaticWeb(
+                process.env.VUE_APP_GO_TO_URL + "html/" + this.webStyle + "/subscription-en.html",
+                "Terms of Service"
+            );
             // 代码内不要写死域名，配置里面都有，拼接！！
             // if (process.env.NODE_ENV == "production") {
             //     appPushStaticWeb("https://bot.supe.ai/html/subscription-en.html", "Terms of Service");
