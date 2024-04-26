@@ -32,7 +32,7 @@ module.exports = defineConfig({
             args[0].parallel = 4;
             args[0].terserOptions.compress.warnings = true;
             args[0].terserOptions.compress.drop_debugger = true;
-            args[0].terserOptions.compress.drop_console = true;
+            // args[0].terserOptions.compress.drop_console = true;
             return args;
         });
         // 避免i18n发出警告，直接指定位置
