@@ -1,4 +1,4 @@
-# ai-chat-vest1-website
+# ai-chat-vest-website
 
 ## Project setup
 ```
