@@ -21,12 +21,15 @@ store.commit("updateWebStyle", webStyle ? webStyle : "");
 console.log(process.env.VUE_APP_WEB_STYLE, "process.env.VUE_APP_WEB_STYLE");
 console.log(webStyle, "webStyle");
 console.log(!!webStyle, "webStyle11111");
+console.log(!webStyle, "webStyle11111");
 try {
     console.log("到我");
     require(`./assets/theme/style-${webStyle}.less`);
 } catch (err) {
     console.log("到默认");
-    require(`./assets/theme/style.less`);
+    if (!webStyle) {
+        require(`./assets/theme/style.less`);
+    }
 }
 
 const app = createApp(App);
