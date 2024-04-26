@@ -8,7 +8,6 @@ import i18n from "./plugins/i18n";
 import "./plugins/adaptive";
 import "./styles/common.less";
 import "./styles/vant.less";
-import "./assets/theme/style.less";
 
 import api from "./service/api";
 import { myVanToast, myDialog } from "./plugins/vant";
@@ -26,7 +25,7 @@ console.log(!webStyle, "webStyle11111");
 if (webStyle) {
     try {
         console.log("到我");
-        require(`./assets/theme/style-${webStyle}.less`);
+        require(`./assets/theme/style${webStyle}.less`);
     } catch (err) {
         console.log("错误");
     }
