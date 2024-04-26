@@ -20,9 +20,12 @@ const webStyle = process.env.VUE_APP_WEB_STYLE;
 store.commit("updateWebStyle", webStyle ? webStyle : "");
 console.log(process.env.VUE_APP_WEB_STYLE, "process.env.VUE_APP_WEB_STYLE");
 console.log(webStyle, "webStyle");
+console.log(!!webStyle, "webStyle11111");
 if (webStyle) {
+    console.log("到我");
     require(`./assets/theme/style-${webStyle}.less`);
 } else {
+    console.log("到默认");
     require(`./assets/theme/style.less`);
 }
 
