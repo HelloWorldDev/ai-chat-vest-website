@@ -26,6 +26,8 @@ if (webStyle) {
     try {
         console.log("到我");
         require(`./assets/theme/style${webStyle}.less`);
+        console.log(`./assets/theme/style${webStyle}.less`, 5555);
+        console.log(require(`./assets/theme/style${webStyle}.less`), 666);
     } catch (err) {
         console.log("错误");
     }
