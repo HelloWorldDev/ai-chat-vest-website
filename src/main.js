@@ -18,6 +18,8 @@ appGetUserInfo();
 // 存储风格
 const webStyle = process.env.VUE_APP_WEB_STYLE;
 store.commit("updateWebStyle", webStyle ? webStyle : "");
+console.log(process.env.VUE_APP_WEB_STYLE, "process.env.VUE_APP_WEB_STYLE");
+console.log(webStyle, "webStyle");
 if (webStyle) {
     require(`./assets/theme/style-${webStyle}.less`);
 } else {
