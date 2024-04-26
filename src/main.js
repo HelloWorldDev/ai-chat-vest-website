@@ -24,9 +24,10 @@ console.log(!!webStyle, "webStyle11111");
 if (webStyle) {
     console.log("到我");
     require(`./assets/theme/style-${webStyle}.less`);
+    console.log(require(`./assets/theme/style-${webStyle}.less`), "look");
 } else {
     console.log("到默认");
-    require(`./assets/theme/style.less`);
+    // require(`./assets/theme/style.less`);
 }
 
 const app = createApp(App);
