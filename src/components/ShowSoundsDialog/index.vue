@@ -18,7 +18,7 @@
                 >
                     <div class="wrap">
                         <img
-                            src="@/assets/img/Gem/play.png"
+                            :src="require(`@/assets/img/Gem/play${webStyle}.png`)"
                             alt=""
                             @click.stop="
                                 synthesizeSpeech(
@@ -36,7 +36,12 @@
                         <p>{{ item.name }}</p>
                     </div>
 
-                    <img v-if="activeId == item.id" class="activeImg" src="@/assets/img/Gem/playright.png" alt="" />
+                    <img
+                        v-if="activeId == item.id"
+                        class="activeImg"
+                        :src="require(`@/assets/img/Gem/playright${webStyle}.png`)"
+                        alt=""
+                    />
                 </div>
             </div>
             <div class="button-wrap">
@@ -165,6 +170,7 @@ export default {
             "aiChatExtInfo",
             "aiChatUserInfo",
             "aiChatGFInfo",
+            "webStyle",
         ]),
     },
     created() {
