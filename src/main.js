@@ -18,9 +18,9 @@ appGetUserInfo();
 // 存储风格
 const webStyle = process.env.VUE_APP_WEB_STYLE;
 store.commit("updateWebStyle", webStyle ? webStyle : "");
-if (webStyle) {
-    require(`./assets/theme/style-${webStyle}.less`);
-} else {
+try {
+    require(`./assets/theme/style${webStyle}.less`);
+} catch (err) {
     require(`./assets/theme/style.less`);
 }
 
