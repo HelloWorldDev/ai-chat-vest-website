@@ -200,7 +200,7 @@ const getTaskList = () => {
         .then((res) => {
             appHiddenLoading();
             if (!res.error_code) {
-                url.value = `https://supe.ai/home?inviteCode=${res.common.invite_info.invite_code}`;
+                url.value = `${process.env.VUE_APP_INTERFACE_UTL}/home?inviteCode=${res.common.invite_info.invite_code}`;
                 dailyList.value = [...res.data.daily];
                 dailyList.value.map((item) => {
                     if (item.id == 1) {
