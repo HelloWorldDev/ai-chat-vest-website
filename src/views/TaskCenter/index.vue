@@ -103,7 +103,7 @@
             </div>
 
             <!-- Social Media Task -->
-            <div class="get-gem">{{ $t("points.text15") }}</div>
+            <div class="get-gem" v-if="socialList.length > 0">{{ $t("points.text15") }}</div>
             <div class="list-li" v-for="(item, index) in socialList" :key="index" @click="goBrowser(item, 2)">
                 <img class="task1" :src="item.iconAdd" alt="" />
                 <div class="li-c">
