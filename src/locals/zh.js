@@ -1,4 +1,8 @@
 export default {
+    webStyleAPPName: {
+        1: "AI Sugar Darling",
+        2: "Sweetheart Ally",
+    },
     public: {
         copy_success: "复制成功",
         copy_success_1: "网址已复制，粘贴到浏览器即可访问！",
@@ -92,8 +96,7 @@ export default {
         text6: "GEM",
         text7: "Points",
         text8: "What is points",
-        // text9: "Points are interactive points of the SUPE AI Darling virtual companion platform, which are immutable interactive credentials built on the blockchain. You can earn Point rewards by completing tasks within the platform. Soon, Points can be used to redeem platform governance token airdrop rewards",
-        text9: "Points are the interactive points of the AI Darling virtual companion platform. You can obtain point rewards by completing tasks within the platform.",
+        text9: "Points are the interactive points of the {name} virtual companion platform. You can obtain point rewards by completing tasks within the platform.",
         text10: "OK",
     },
     recharge: {

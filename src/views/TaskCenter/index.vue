@@ -103,7 +103,7 @@
             </div>
 
             <!-- Social Media Task -->
-            <div class="get-gem">{{ $t("points.text15") }}</div>
+            <div class="get-gem" v-if="socialList.length > 0">{{ $t("points.text15") }}</div>
             <div class="list-li" v-for="(item, index) in socialList" :key="index" @click="goBrowser(item, 2)">
                 <img class="task1" :src="item.iconAdd" alt="" />
                 <div class="li-c">
@@ -200,47 +200,58 @@ const getTaskList = () => {
         .then((res) => {
             appHiddenLoading();
             if (!res.error_code) {
-                url.value = `https://supe.ai/home?inviteCode=${res.common.invite_info.invite_code}`;
-                dailyList.value = [...res.data.daily];
-                dailyList.value.map((item) => {
-                    if (item.id == 1) {
-                        item.iconAdd = taskIcon1;
-                    } else if (item.id == 2) {
-                        item.iconAdd = taskIcon2;
-                    }
-                });
-                referList.value = [...res.data.refer];
-                referList.value.map((item) => {
-                    if (item.id == 3) {
-                        item.iconAdd = taskIcon3;
-                    }
-                });
-                advancedList.value = [...res.data.advanced];
-                advancedList.value.map((item) => {
-                    if (item.id == 4) {
-                        item.iconAdd = taskIcon4;
-                    } else if (item.id == 5) {
-                        item.iconAdd = taskIcon5;
-                    }
-                });
-                socialList.value = [...res.data.social];
-                socialList.value.map((item) => {
-                    if (item.id == 6) {
-                        item.iconAdd = taskIcon6;
-                        if (isFollowed.value == true) {
-                            item.isFollowed = true;
-                        } else {
-                            item.isFollowed = false;
+                url.value = `${process.env.VUE_APP_INTERFACE_UTL}/home?inviteCode=${res.common.invite_info.invite_code}`;
+                if (res.data && res.data.daily) {
+                    dailyList.value = [...res.data.daily];
+                    dailyList.value.map((item) => {
+                        if (item.id == 1) {
+                            item.iconAdd = taskIcon1;
+                        } else if (item.id == 2) {
+                            item.iconAdd = taskIcon2;
                         }
-                    } else if (item.id == 7) {
-                        item.iconAdd = taskIcon7;
-                        if (isDiscorded.value == true) {
-                            item.isFollowed = true;
-                        } else {
-                            item.isFollowed = false;
+                    });
+                }
+                if (res.data && res.data.refer) {
+                    referList.value = [...res.data.refer];
+                    referList.value.map((item) => {
+                        if (item.id == 3) {
+                            item.iconAdd = taskIcon3;
                         }
-                    }
-                });
+                    });
+                }
+
+                if (res.data && res.data.advanced) {
+                    advancedList.value = [...res.data.advanced];
+                    advancedList.value.map((item) => {
+                        if (item.id == 4) {
+                            item.iconAdd = taskIcon4;
+                        } else if (item.id == 5) {
+                            item.iconAdd = taskIcon5;
+                        }
+                    });
+                }
+
+                if (res.data && res.data.social) {
+                    socialList.value = [...res.data.social];
+                    socialList.value.map((item) => {
+                        if (item.id == 6) {
+                            item.iconAdd = taskIcon6;
+                            if (isFollowed.value == true) {
+                                item.isFollowed = true;
+                            } else {
+                                item.isFollowed = false;
+                            }
+                        } else if (item.id == 7) {
+                            item.iconAdd = taskIcon7;
+                            if (isDiscorded.value == true) {
+                                item.isFollowed = true;
+                            } else {
+                                item.isFollowed = false;
+                            }
+                        }
+                    });
+                }
+
                 // $store.commit("updateSocialListVx", socialList);
                 totalPoints.value = res.common.user_info.supe_point;
                 const common = res.common;

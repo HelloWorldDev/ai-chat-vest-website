@@ -122,7 +122,7 @@ onBeforeUnmount(() => {
     flex-direction: column;
     justify-content: space-between;
     // background: #161820; //发布正式时注释掉！！！！！！！
-    background: var(--bg-chat-primary); //发布正式时注释掉！！！！！！！
+    // background: var(--bg-chat-primary); //发布正式时注释掉！！！！！！！
     scrollbar-width: thin !important;
     scrollbar-color: transparent !important;
     ::-webkit-scrollbar,

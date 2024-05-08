@@ -10,7 +10,7 @@
         <div class="page">
             <div class="main">
                 <p class="title">{{ $t("detailList.text8") }}</p>
-                <p class="text">{{ $t("detailList.text9") }}</p>
+                <p class="text">{{ $t("detailList.text9", { name: webStyle ? $t("webStyleAPPName." + webStyle) : "" }) }}</p>
                 <van-button type="primary" class="btn btn1" round @click="cancelClick">
                     {{ $t("detailList.text10") }}
                 </van-button>
@@ -21,11 +21,13 @@
 </template>
 
 <script setup>
-import { ref, defineExpose } from "vue";
+import { ref, defineExpose, computed, getCurrentInstance } from "vue";
 const overlayStyle = ref({
     background: "rgba(0, 0, 0, 0.65)",
 });
 const isShowDialog = ref(false);
+const { $store } = getCurrentInstance().proxy;
+const webStyle = computed(() => $store.state.webStyle);
 
 function getFlag(item) {
     isShowDialog.value = item;

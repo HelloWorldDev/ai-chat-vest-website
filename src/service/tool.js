@@ -28,10 +28,11 @@ export function _post(url, params) {
 
     const access_secret = getCookie("access_secret") || "我的天哪噜";
     const access_token = getCookie("access_token") || "我的天哪噜";
-    if (access_token == "我的天哪噜") {
-        let dev_uid = 1;
-        data.dev_uid = dev_uid;
-    }
+    // 测试时可打开
+    // if (access_token == "我的天哪噜") {
+    //     let dev_uid = 1;
+    //     data.dev_uid = dev_uid;
+    // }
     data.app_id = process.env.VUE_APP_APP_ID;
     data.timestamp = timestamp;
     data.access_token = access_token;
